@@ -1,0 +1,70 @@
+.overlay-container {
+    position: relative;
+    
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set text color */
+  }
+  .Background Image{
+background-size: cover;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: slideIn 1s forwards;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translate(-50%, -60%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  } 
+  .card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Hover effect */
+  .card:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a slightly larger shadow on hover */
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for text */
+a:hover {
+    color: #ffcc00; /* Change the color on hover */
+}
+
+/* Basic styles for icons (assuming you are using font icons) */
+i {
+    font-size: 1.2em;
+    margin-right: 5px;
+    vertical-align: middle;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for icons */
+i:hover {
+    color: #ffcc00; /* Change the color on hover */
+}
